@@ -459,10 +459,1026 @@
                 </p>
             </div>
         </div>
+
+        <!-- Slide 8 -->
+        <div class="slide">
+            <h1>IAM - Identity and Access Management</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
+                    <h2 style="color: #00d9ff; font-size: 2.5em; margin-bottom: 20px; border: none;">What is IAM?</h2>
+                    <p style="font-size: 1.4em; margin-bottom: 0;">
+                        A framework of policies and technologies ensuring that the <strong style="color: #00d9ff;">right people</strong> have the <strong style="color: #00d9ff;">right access</strong> to the <strong style="color: #00d9ff;">right resources</strong> at the <strong style="color: #00d9ff;">right time</strong>
+                    </p>
+                </div>
+
+                <h2>Core Components of IAM</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>👤 Identity Management</h4>
+                        <p>Creating, managing, and maintaining digital identities for users (employees, contractors, partners)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔑 Authentication</h4>
+                        <p>Verifying that users are who they claim to be (passwords, biometrics, MFA)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🛡️ Authorization</h4>
+                        <p>Determining what resources and actions an authenticated user can access</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 Access Management</h4>
+                        <p>Granting, modifying, and revoking permissions based on roles and policies</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📝 Audit & Compliance</h4>
+                        <p>Tracking who accessed what, when, and logging all authentication attempts</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔄 Lifecycle Management</h4>
+                        <p>Managing user access from onboarding to offboarding (joiner/mover/leaver)</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">IAM Key Principles</h2>
+                <div style="margin-top: 30px;">
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">🎯 Least Privilege</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">Users should only have the minimum access necessary to perform their job functions - nothing more</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">🔐 Zero Trust</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">"Never trust, always verify" - verify every access request regardless of source or location</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">👥 Role-Based Access Control (RBAC)</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">Assign permissions based on job roles rather than individual users (e.g., "HR Manager" role gets HR system access)</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">🔍 Separation of Duties</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">No single person should have complete control over critical processes (prevent fraud and errors)</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">IAM Technologies & Tools</h2>
+                <ul style="font-size: 1.2em; line-height: 1.9;">
+                    <li><strong style="color: #00d9ff;">Single Sign-On (SSO):</strong> Okta, Azure AD, Auth0 - one login for multiple applications</li>
+                    <li><strong style="color: #00d9ff;">Multi-Factor Authentication (MFA):</strong> Google Authenticator, Duo, YubiKey</li>
+                    <li><strong style="color: #00d9ff;">Identity Providers (IdP):</strong> Active Directory, LDAP, cloud identity services</li>
+                    <li><strong style="color: #00d9ff;">Privileged Access Management (PAM):</strong> CyberArk, BeyondTrust - manage admin accounts</li>
+                    <li><strong style="color: #00d9ff;">Identity Governance:</strong> SailPoint, Saviynt - automate access reviews and compliance</li>
+                </ul>
+
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 25px; border-radius: 10px; margin-top: 40px;">
+                    <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 15px;">Real-World Example:</h4>
+                    <p style="font-size: 1.2em; margin-bottom: 0;">
+                        When an employee joins a company, IAM automatically provisions their accounts, assigns them to appropriate groups (Sales, Marketing), grants role-based access, and sets up MFA. When they leave, IAM immediately revokes all access across all systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide">
+            <h1>AAA - Authentication, Authorization, and Accounting</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <p style="font-size: 1.4em; text-align: center; margin-bottom: 50px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 30px; border-radius: 12px;">
+                    The <strong style="color: #00d9ff;">AAA framework</strong> is the security model that controls access to computer resources, enforces policies, and audits usage.
+                </p>
+
+                <div style="margin-bottom: 50px;">
+                    <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 30px;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">🔐 Authentication - "Who are you?"</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>Definition:</strong> The process of verifying the identity of a user, device, or system.
+                        </p>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">Authentication Factors:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Something You Know:</strong> Passwords, PINs, security questions</li>
+                            <li><strong style="color: #00d9ff;">Something You Have:</strong> Smart cards, tokens, mobile phones (OTP codes)</li>
+                            <li><strong style="color: #00d9ff;">Something You Are:</strong> Biometrics - fingerprint, facial recognition, retina scan</li>
+                            <li><strong style="color: #00d9ff;">Somewhere You Are:</strong> Location-based (GPS, IP address)</li>
+                            <li><strong style="color: #00d9ff;">Something You Do:</strong> Behavioral biometrics - typing patterns, gait analysis</li>
+                        </ul>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">Multi-Factor Authentication (MFA):</h4>
+                        <p style="font-size: 1.2em;">Combining two or more factors for stronger security (e.g., password + fingerprint + SMS code)</p>
+                        <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                            <strong style="color: #00d9ff;">Real-World Example:</strong> When you log into your bank app, you enter a password (what you know) and then receive a code on your phone (what you have) - that's 2FA!
+                        </div>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 30px;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">🛡️ Authorization - "What can you do?"</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>Definition:</strong> Determining what an authenticated user is allowed to access and what actions they can perform.
+                        </p>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">Authorization Models:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Discretionary Access Control (DAC):</strong> Resource owners decide who gets access (file permissions)</li>
+                            <li><strong style="color: #00d9ff;">Mandatory Access Control (MAC):</strong> System-enforced policies, used in military/government (security clearance levels)</li>
+                            <li><strong style="color: #00d9ff;">Role-Based Access Control (RBAC):</strong> Access based on user roles in the organization</li>
+                            <li><strong style="color: #00d9ff;">Attribute-Based Access Control (ABAC):</strong> Access based on attributes (user, resource, environment)</li>
+                        </ul>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">Key Concepts:</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 10px;"><strong style="color: #00d9ff;">Read, Write, Execute:</strong> Basic permission types for files and resources</p>
+                        <p style="font-size: 1.2em;"><strong style="color: #00d9ff;">Implicit Deny:</strong> If not explicitly allowed, access is denied by default</p>
+                        <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                            <strong style="color: #00d9ff;">Real-World Example:</strong> In a company, an HR employee can view and edit employee records, but a sales employee can only view their own profile - that's authorization!
+                        </div>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">📊 Accounting - "What did you do?"</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>Definition:</strong> Tracking and logging user activities for auditing, billing, and security monitoring.
+                        </p>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">What Gets Tracked:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Login/Logout Times:</strong> When users access and leave systems</li>
+                            <li><strong style="color: #00d9ff;">Resources Accessed:</strong> Which files, databases, or systems were used</li>
+                            <li><strong style="color: #00d9ff;">Actions Performed:</strong> File modifications, data downloads, configuration changes</li>
+                            <li><strong style="color: #00d9ff;">Data Volume:</strong> How much bandwidth or storage was consumed</li>
+                            <li><strong style="color: #00d9ff;">Failed Attempts:</strong> Unsuccessful login attempts, unauthorized access tries</li>
+                            <li><strong style="color: #00d9ff;">Session Duration:</strong> How long users were connected</li>
+                        </ul>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">Why Accounting Matters:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Security Forensics:</strong> Investigate incidents and identify attackers</li>
+                            <li><strong style="color: #00d9ff;">Compliance:</strong> Meet regulatory requirements (GDPR, HIPAA, SOX)</li>
+                            <li><strong style="color: #00d9ff;">Billing:</strong> Charge users based on resource consumption (cloud services)</li>
+                            <li><strong style="color: #00d9ff;">Behavior Analysis:</strong> Detect anomalies and insider threats</li>
+                        </ul>
+                        <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                            <strong style="color: #00d9ff;">Real-World Example:</strong> When a data breach occurs, security teams review logs to see: Who accessed the data? When? From where? What did they do? All possible through accounting logs!
+                        </div>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px; text-align: center;">AAA Protocols & Technologies</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🔵 RADIUS</h4>
+                        <p>Remote Authentication Dial-In User Service - widely used for network access (WiFi, VPNs)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🟢 TACACS+</h4>
+                        <p>Terminal Access Controller Access-Control System Plus - Cisco's protocol for device management</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🟡 Kerberos</h4>
+                        <p>Network authentication protocol using tickets - used in Windows Active Directory</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🟣 LDAP</h4>
+                        <p>Lightweight Directory Access Protocol - directory services for user authentication</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔴 OAuth 2.0</h4>
+                        <p>Authorization framework for delegated access - "Sign in with Google/Facebook"</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🟠 SAML</h4>
+                        <p>Security Assertion Markup Language - enterprise SSO and federation</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.4em; text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; border-radius: 12px;">
+                    <strong style="color: #00d9ff;">The AAA Flow:</strong> First authenticate who you are → Then authorize what you can do → Finally account for what you did. All three work together to create a secure access control system!
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <h1>Need to Know & Least Privilege</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <p style="font-size: 1.3em; text-align: center; margin-bottom: 50px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 30px; border-radius: 12px;">
+                    Two fundamental security principles that minimize risk by limiting access to only what is absolutely necessary for job functions.
+                </p>
+
+                <div style="margin-bottom: 50px;">
+                    <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 40px;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">🔐 Need to Know Principle</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>Definition:</strong> Access to sensitive information should only be granted to individuals who require that specific information to perform their job duties - regardless of their security clearance level.
+                        </p>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">Key Characteristics:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Information-Centric:</strong> Focuses on protecting specific pieces of data or information</li>
+                            <li><strong style="color: #00d9ff;">Purpose-Driven:</strong> Access is granted based on legitimate business purpose</li>
+                            <li><strong style="color: #00d9ff;">Time-Limited:</strong> Access may be temporary, granted only for the duration needed</li>
+                            <li><strong style="color: #00d9ff;">Compartmentalization:</strong> Even colleagues at the same level may not have access to each other's data</li>
+                        </ul>
+
+                        <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                            <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 15px;">Real-World Examples:</h4>
+                            <div style="font-size: 1.2em; line-height: 1.9; margin-bottom: 20px;">
+                                <p style="margin-bottom: 15px;"><strong style="color: #00d9ff;">Military/Government:</strong> A soldier with Top Secret clearance cannot access all Top Secret documents - only those related to their specific mission or assignment.</p>
+
+                                <p style="margin-bottom: 15px;"><strong style="color: #00d9ff;">Healthcare:</strong> A nurse treating a patient can access that patient's medical records, but cannot browse records of patients they're not treating - even though they work in the same hospital.</p>
+
+                                <p style="margin-bottom: 15px;"><strong style="color: #00d9ff;">Corporate:</strong> An HR employee processing payroll for the engineering department cannot access payroll data for the marketing department unless specifically assigned to work with that team.</p>
+
+                                <p style="margin-bottom: 0;"><strong style="color: #00d9ff;">Legal Firm:</strong> Lawyers working on Case A cannot access files for Case B, even if both cases are handled by the same firm, to prevent conflicts of interest and maintain client confidentiality.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 40px;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">🎯 Least Privilege Principle</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>Definition:</strong> Users should be granted the minimum levels of access - or permissions - needed to perform their job functions. Nothing more, nothing less.
+                        </p>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">Key Characteristics:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Permission-Centric:</strong> Focuses on what actions users can perform (read, write, execute, delete)</li>
+                            <li><strong style="color: #00d9ff;">Role-Based:</strong> Permissions aligned with job role and responsibilities</li>
+                            <li><strong style="color: #00d9ff;">Default Deny:</strong> Start with no access and only grant what's necessary</li>
+                            <li><strong style="color: #00d9ff;">Minimal Admin Rights:</strong> Limit the number of users with administrative privileges</li>
+                        </ul>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">Examples in Practice:</h4>
+                        <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 15px; border: 2px solid #00d9ff;">
+                            <table style="width: 100%; font-size: 1.1em;">
+                                <tr style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white;">
+                                    <th style="padding: 15px; text-align: left; border-radius: 5px 0 0 0;">Role</th>
+                                    <th style="padding: 15px; text-align: left;">Access Granted</th>
+                                    <th style="padding: 15px; text-align: left; border-radius: 0 5px 0 0;">Access Denied</th>
+                                </tr>
+                                <tr style="background: #f8fafc;">
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Data Entry Clerk</strong></td>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;">Read & Write to assigned database tables</td>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;">Delete records, modify database structure, access other databases</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Developer</strong></td>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;">Full access to development environment</td>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;">No access to production systems or customer data</td>
+                                </tr>
+                                <tr style="background: #f8fafc;">
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Regular User</strong></td>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;">Install approved software, access own files</td>
+                                    <td style="padding: 15px; border-bottom: 1px solid #ddd;">No system configuration changes, cannot install drivers</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px;"><strong>System Admin</strong></td>
+                                    <td style="padding: 15px;">Full system access for maintenance tasks</td>
+                                    <td style="padding: 15px;">Should use regular account for daily work, admin only when needed</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff3cd; padding: 35px; border-radius: 12px; border-left: 8px solid #ff6b6b; margin-bottom: 40px;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">⚠️ Addressing Privilege Creep</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>What is Privilege Creep?</strong> The gradual accumulation of access rights over time as users change roles, take on new responsibilities, or receive temporary access that is never revoked.
+                        </p>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">How Privilege Creep Happens:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9; color: #0a192f;">
+                            <li><strong style="color: #ff6b6b;">Role Changes:</strong> Employee promoted from Sales to Sales Manager keeps old sales representative access + gains manager privileges</li>
+                            <li><strong style="color: #ff6b6b;">Department Transfers:</strong> Employee moves from Marketing to Finance but retains access to marketing systems</li>
+                            <li><strong style="color: #ff6b6b;">Temporary Projects:</strong> Granted special access for a 2-week project, access never removed after project ends</li>
+                            <li><strong style="color: #ff6b6b;">Emergency Access:</strong> Given elevated privileges during an incident, permissions remain after incident resolution</li>
+                            <li><strong style="color: #ff6b6b;">Poor Documentation:</strong> No tracking of why access was granted or when it should be reviewed</li>
+                        </ul>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">Dangers of Privilege Creep:</h4>
+                        <div class="feature-grid" style="margin-top: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 8px; border: 2px solid #ff6b6b;">
+                                <h4 style="color: #ff6b6b;">🎯 Increased Attack Surface</h4>
+                                <p style="color: #0a192f;">More permissions = more ways for attackers to exploit if account is compromised</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; border: 2px solid #ff6b6b;">
+                                <h4 style="color: #ff6b6b;">🚨 Insider Threat Risk</h4>
+                                <p style="color: #0a192f;">Disgruntled employees with excessive access can cause significant damage</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; border: 2px solid #ff6b6b;">
+                                <h4 style="color: #ff6b6b;">⚖️ Compliance Violations</h4>
+                                <p style="color: #0a192f;">Regulations require strict access controls; privilege creep leads to audit failures</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; border: 2px solid #ff6b6b;">
+                                <h4 style="color: #ff6b6b;">💰 Accidental Data Loss</h4>
+                                <p style="color: #0a192f;">Users with unnecessary delete/modify rights may accidentally corrupt critical data</p>
+                            </div>
+                        </div>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">Solutions to Prevent Privilege Creep:</h4>
+                        <div style="background: white; padding: 25px; border-radius: 10px; margin-top: 15px; border: 2px solid #00d9ff;">
+                            <ul style="font-size: 1.2em; line-height: 1.9; color: #0a192f; margin: 0;">
+                                <li><strong style="color: #00d9ff;">Automated Provisioning/De-provisioning:</strong> Use IAM systems to automatically remove access when employees change roles or leave</li>
+                                <li><strong style="color: #00d9ff;">Regular Access Reviews:</strong> Quarterly or bi-annual reviews of all user permissions</li>
+                                <li><strong style="color: #00d9ff;">Role-Based Access Control (RBAC):</strong> Assign permissions based on roles, not individuals - easier to manage</li>
+                                <li><strong style="color: #00d9ff;">Time-Limited Access:</strong> Temporary permissions automatically expire after a set period</li>
+                                <li><strong style="color: #00d9ff;">Access Recertification:</strong> Managers must periodically certify that their team members still need current access</li>
+                                <li><strong style="color: #00d9ff;">Least Privilege by Default:</strong> New employees start with minimal access, request more as needed</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff;">
+                        <h2 style="color: #0a192f; margin-top: 0; font-size: 2.2em;">📊 Accountability Through Audits</h2>
+                        <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                            <strong>Why Audits Matter:</strong> Regular audits ensure that access controls are working as intended, identify violations, and maintain compliance with security policies and regulations.
+                        </p>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">Types of Access Audits:</h4>
+                        <div style="margin-top: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #00d9ff;">
+                                <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">1. User Access Reviews</h5>
+                                <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Review all user accounts and their assigned permissions to verify they're still appropriate</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #00d9ff;">
+                                <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">2. Privileged Account Audits</h5>
+                                <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Special focus on admin accounts, root access, and other high-privilege users</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #00d9ff;">
+                                <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">3. Activity Log Audits</h5>
+                                <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Examine who accessed what resources, when, and what actions they performed</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #00d9ff;">
+                                <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">4. Compliance Audits</h5>
+                                <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Verify adherence to regulatory requirements (GDPR, HIPAA, SOX, PCI-DSS)</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #00d9ff;">
+                                <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">5. Orphaned Account Detection</h5>
+                                <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Identify accounts that haven't been used in X days or belong to terminated employees</p>
+                            </div>
+                        </div>
+
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">What Audits Should Verify:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li><strong style="color: #00d9ff;">Principle of Least Privilege:</strong> Are users accessing resources beyond their job requirements?</li>
+                            <li><strong style="color: #00d9ff;">Need to Know:</strong> Can users access sensitive data they don't require for their work?</li>
+                            <li><strong style="color: #00d9ff;">Separation of Duties:</strong> Does any single user have conflicting permissions (e.g., create AND approve transactions)?</li>
+                            <li><strong style="color: #00d9ff;">Dormant Accounts:</strong> Are there inactive accounts that should be disabled or removed?</li>
+                            <li><strong style="color: #00d9ff;">Policy Violations:</strong> Are there any access patterns that violate security policies?</li>
+                            <li><strong style="color: #00d9ff;">Anomalous Behavior:</strong> Are there unusual access patterns that might indicate compromise or misuse?</li>
+                        </ul>
+
+                        <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                            <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 15px;">Audit Best Practices:</h4>
+                            <ul style="font-size: 1.2em; line-height: 1.9; margin-bottom: 0;">
+                                <li><strong>Schedule Regular Audits:</strong> Quarterly for high-risk systems, annually for lower-risk</li>
+                                <li><strong>Automate Where Possible:</strong> Use SIEM and IAM tools to continuously monitor and flag anomalies</li>
+                                <li><strong>Document Everything:</strong> Maintain audit trails showing what was reviewed, findings, and remediation actions</li>
+                                <li><strong>Assign Ownership:</strong> Managers should be accountable for their team's access rights</li>
+                                <li><strong>Follow Up on Findings:</strong> Don't just identify issues - ensure they're resolved and track remediation</li>
+                                <li><strong>Independent Review:</strong> Audits should be conducted by someone other than the system owner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.4em; text-align: center; margin-top: 40px; padding: 30px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; border-radius: 12px;">
+                    <strong style="color: #00d9ff;">Remember:</strong> Security is not a one-time setup. Regular audits + proper access management = Strong defense against both external attacks and insider threats. Trust, but always verify!
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide">
+            <h1>Identity Federation</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
+                    <h2 style="color: #00d9ff; font-size: 2.5em; margin-bottom: 20px; border: none;">What is Identity Federation?</h2>
+                    <p style="font-size: 1.4em; margin-bottom: 0;">
+                        A system that allows users to use the <strong style="color: #00d9ff;">same digital identity</strong> to access multiple, independent applications or systems across <strong style="color: #00d9ff;">different organizations or security domains</strong>
+                    </p>
+                </div>
+
+                <h2>How Identity Federation Works</h2>
+                <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 5px solid #00d9ff; margin-bottom: 40px;">
+                    <p style="font-size: 1.2em; margin-bottom: 20px; color: #0a192f;">
+                        Instead of creating separate accounts for each service, identity federation establishes <strong style="color: #00d9ff;">trust relationships</strong> between an <strong>Identity Provider (IdP)</strong> and multiple <strong>Service Providers (SPs)</strong>.
+                    </p>
+                    <div style="background: white; padding: 25px; border-radius: 10px; margin-top: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 0;">The Federation Flow:</h4>
+                        <ol style="font-size: 1.2em; line-height: 2; color: #0a192f;">
+                            <li><strong style="color: #00d9ff;">User requests access</strong> to a service (e.g., Salesforce, Office 365)</li>
+                            <li><strong style="color: #00d9ff;">Service Provider redirects</strong> user to the trusted Identity Provider</li>
+                            <li><strong style="color: #00d9ff;">User authenticates</strong> with the Identity Provider (enters credentials once)</li>
+                            <li><strong style="color: #00d9ff;">IdP creates a security token</strong> containing user identity and attributes</li>
+                            <li><strong style="color: #00d9ff;">Token is sent</strong> back to the Service Provider</li>
+                            <li><strong style="color: #00d9ff;">Service Provider validates</strong> the token and grants access</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h2>Key Components of Identity Federation</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🏢 Identity Provider (IdP)</h4>
+                        <p>The trusted authority that authenticates users and issues security tokens (e.g., Okta, Azure AD, Google Workspace)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🎯 Service Provider (SP)</h4>
+                        <p>Applications or services that rely on the IdP for authentication (e.g., Salesforce, Slack, Zoom)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔐 Security Tokens</h4>
+                        <p>Digital assertions containing user identity, attributes, and authentication proof (SAML assertions, JWT tokens)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🤝 Trust Relationship</h4>
+                        <p>Pre-established agreement between IdP and SP, including shared certificates and metadata</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📋 Attributes</h4>
+                        <p>User information shared in tokens (email, name, department, roles, group memberships)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔄 Federation Protocols</h4>
+                        <p>Standards defining how identity information is exchanged (SAML, OAuth, OpenID Connect)</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">Benefits of Identity Federation</h2>
+                <div style="margin-top: 30px;">
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">✅ Improved User Experience</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">One set of credentials for multiple services - no need to remember dozens of passwords</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">🔒 Enhanced Security</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">Centralized authentication with MFA, stronger password policies, and unified access controls</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">⚡ Faster Provisioning/De-provisioning</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">When employee leaves, disable one account to revoke access to all federated services</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff; margin-bottom: 20px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">💰 Reduced IT Costs</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">Fewer password reset tickets, simplified user management, less redundant infrastructure</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border-left: 5px solid #00d9ff;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-bottom: 10px;">📊 Centralized Audit & Compliance</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">Single source of authentication logs for all services, easier compliance reporting</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">Real-World Use Cases</h2>
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 30px; border-radius: 12px; margin-top: 30px;">
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 10px;">🏢 Enterprise Environment</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">
+                            Employees use their corporate Active Directory credentials to access Office 365, Salesforce, Workday, Jira, and 50+ other cloud applications without separate logins.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 10px;">🎓 Educational Institutions</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">
+                            Students use their university credentials to access library systems, learning management platforms (Canvas, Blackboard), email, and partner institution resources.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 10px;">🏥 Healthcare Networks</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">
+                            Doctors access electronic health records across multiple hospitals in a healthcare network using single credentials while maintaining HIPAA compliance.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 10px;">🌐 Partner/Vendor Access</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">
+                            External partners and vendors access specific company resources using their own organization's credentials through B2B federation.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">Federation Types</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🏢 Enterprise Federation</h4>
+                        <p>Within a single organization connecting internal IdP to cloud services (Azure AD to SaaS apps)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🤝 Cross-Organization Federation</h4>
+                        <p>Between different organizations (company A employees accessing company B resources)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🌍 Social Identity Federation</h4>
+                        <p>Using social media credentials (Sign in with Google, Facebook, LinkedIn) for consumer apps</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.4em; text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; border-radius: 12px;">
+                    <strong style="color: #00d9ff;">Key Concept:</strong> Federation doesn't store or sync passwords across systems. Instead, it establishes trust so one system can vouch for users authenticated by another system!
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide">
+            <h1>Token-Based Authentication</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
+                    <h2 style="color: #00d9ff; font-size: 2.5em; margin-bottom: 20px; border: none;">What is Token-Based Authentication?</h2>
+                    <p style="font-size: 1.4em; margin-bottom: 0;">
+                        An authentication method where users exchange their credentials for a <strong style="color: #00d9ff;">security token</strong> - a digital "proof of identity" that grants access to resources without repeatedly sending credentials
+                    </p>
+                </div>
+
+                <h2>How Token-Based Authentication Works</h2>
+                <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 40px;">
+                    <div style="background: white; padding: 30px; border-radius: 10px;">
+                        <h4 style="color: #0a192f; font-size: 1.4em; margin-top: 0;">The Token Flow:</h4>
+                        <ol style="font-size: 1.2em; line-height: 2.2; color: #0a192f; margin-bottom: 0;">
+                            <li><strong style="color: #00d9ff;">User Login:</strong> User submits credentials (username + password) to the authentication server</li>
+                            <li><strong style="color: #00d9ff;">Credential Verification:</strong> Server validates credentials against the database</li>
+                            <li><strong style="color: #00d9ff;">Token Generation:</strong> If valid, server creates a cryptographically signed token containing user information</li>
+                            <li><strong style="color: #00d9ff;">Token Delivery:</strong> Token is sent back to the client (browser, mobile app)</li>
+                            <li><strong style="color: #00d9ff;">Token Storage:</strong> Client stores the token (in memory, localStorage, cookies)</li>
+                            <li><strong style="color: #00d9ff;">Authenticated Requests:</strong> Client includes token in every subsequent API request</li>
+                            <li><strong style="color: #00d9ff;">Token Validation:</strong> Server validates token signature and checks expiration on each request</li>
+                            <li><strong style="color: #00d9ff;">Access Granted:</strong> If token is valid, server processes the request</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h2>Token vs Session-Based Authentication</h2>
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 40px; border: 2px solid #00d9ff;">
+                    <table style="width: 100%; font-size: 1.1em; border-collapse: collapse;">
+                        <tr style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white;">
+                            <th style="padding: 15px; text-align: left; border-radius: 5px 0 0 0;">Aspect</th>
+                            <th style="padding: 15px; text-align: left;">Session-Based (Traditional)</th>
+                            <th style="padding: 15px; text-align: left; border-radius: 0 5px 0 0;">Token-Based (Modern)</th>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Storage</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Server stores session data in memory/database</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Stateless - no server-side storage needed</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Scalability</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Requires sticky sessions or shared session store</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Highly scalable - any server can validate tokens</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Cross-Domain</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Difficult - cookies don't work across domains</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Easy - tokens can be sent in headers to any domain</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Mobile Apps</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Challenging - cookies not ideal for mobile</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Perfect - tokens work seamlessly with mobile apps</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Performance</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Requires database lookup on each request</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">No database lookup - verify signature only</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><strong>Security</strong></td>
+                            <td style="padding: 15px;">Vulnerable to CSRF attacks</td>
+                            <td style="padding: 15px;">Less vulnerable to CSRF, but needs XSS protection</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>Common Token Types</h2>
+                <div style="margin-top: 30px;">
+                    <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 25px;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">🔑 JWT (JSON Web Token)</h3>
+                        <p style="font-size: 1.2em; margin-bottom: 15px; color: #0a192f;">
+                            The most popular token format. Self-contained JSON object with three parts: Header, Payload, Signature
+                        </p>
+                        <div style="background: #0a192f; color: #00ff00; padding: 20px; border-radius: 8px; font-family: monospace; font-size: 0.9em; overflow-x: auto;">
+                            <div style="margin-bottom: 10px;"><strong style="color: #00d9ff;">Example JWT Structure:</strong></div>
+                            <div style="color: #ff6b6b;">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</div>
+                            <div style="color: #00ff00;">.eyJ1c2VySWQiOiIxMjM0IiwibmFtZSI6IkpvaG4gRG9lIiwicm9sZSI6ImFkbWluIn0</div>
+                            <div style="color: #00d9ff;">.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</div>
+                            <div style="margin-top: 15px; color: white;">
+                                <div><strong style="color: #ff6b6b;">Header:</strong> Algorithm and token type</div>
+                                <div><strong style="color: #00ff00;">Payload:</strong> User data and claims (userId, name, role, expiration)</div>
+                                <div><strong style="color: #00d9ff;">Signature:</strong> Cryptographic signature to verify authenticity</div>
+                            </div>
+                        </div>
+                        <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">JWT Benefits:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9; color: #0a192f;">
+                            <li><strong style="color: #00d9ff;">Compact:</strong> Small size, efficient for HTTP headers</li>
+                            <li><strong style="color: #00d9ff;">Self-Contained:</strong> All necessary info in the token itself</li>
+                            <li><strong style="color: #00d9ff;">Stateless:</strong> Server doesn't need to store session data</li>
+                            <li><strong style="color: #00d9ff;">Cross-Platform:</strong> Works with any language/framework</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 25px;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">🎫 SAML Tokens</h3>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">
+                            XML-based tokens used primarily in enterprise SSO. More verbose than JWT but includes rich metadata and supports complex enterprise scenarios. Common in SAML 2.0 federation.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 25px;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">🔐 OAuth Access Tokens</h3>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">
+                            Tokens issued by OAuth authorization servers. Can be opaque (random strings validated against server) or JWT format. Used for API authorization (e.g., "this token allows read access to Gmail").
+                        </p>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 8px solid #00d9ff;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">🔄 Refresh Tokens</h3>
+                        <p style="font-size: 1.2em; margin-bottom: 0; color: #0a192f;">
+                            Long-lived tokens used to obtain new access tokens without re-authentication. Stored securely, never sent with API requests. Enables "stay logged in" functionality while keeping access tokens short-lived for security.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">Token Security Best Practices</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>⏰ Short Expiration</h4>
+                        <p>Access tokens should expire quickly (15-60 minutes) to limit damage if stolen</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔒 HTTPS Only</h4>
+                        <p>Always transmit tokens over encrypted connections to prevent interception</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🛡️ Secure Storage</h4>
+                        <p>Store tokens securely (httpOnly cookies, secure storage APIs, not localStorage for sensitive apps)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>✍️ Sign & Verify</h4>
+                        <p>Use strong algorithms (RS256, HS256) to sign tokens and always validate signatures</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🚫 Token Revocation</h4>
+                        <p>Implement token blacklisting or revocation mechanisms for emergency situations</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 Monitor Usage</h4>
+                        <p>Log and monitor token issuance and validation for suspicious patterns</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.4em; text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; border-radius: 12px;">
+                    <strong style="color: #00d9ff;">Key Takeaway:</strong> Tokens are like temporary digital badges - they prove you've already been authenticated without needing to show your password every time. Modern apps prefer tokens because they're faster, more scalable, and work better with mobile and microservices!
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 13 -->
+        <div class="slide">
+            <h1>Trust Relationships, SAML Tokens & SSO</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+                <h2>🤝 Trust Relationships</h2>
+                <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 40px;">
+                    <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                        <strong>Definition:</strong> A pre-established agreement between two systems that allows one system to trust authentication performed by another system.
+                    </p>
+                    <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">How Trust is Established:</h4>
+                    <ul style="font-size: 1.2em; line-height: 1.9; color: #0a192f;">
+                        <li><strong style="color: #00d9ff;">Certificate Exchange:</strong> Systems exchange X.509 certificates containing public keys</li>
+                        <li><strong style="color: #00d9ff;">Metadata Sharing:</strong> IdP and SP share configuration metadata (endpoints, entity IDs, capabilities)</li>
+                        <li><strong style="color: #00d9ff;">Configuration:</strong> Each system configures the other as a trusted partner</li>
+                        <li><strong style="color: #00d9ff;">Cryptographic Validation:</strong> Tokens are signed with private keys and verified with public keys</li>
+                    </ul>
+
+                    <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 25px; border-radius: 10px; margin-top: 25px;">
+                        <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 15px;">Real-World Example:</h4>
+                        <p style="font-size: 1.2em; margin-bottom: 0;">
+                            Your company (IdP) establishes a trust relationship with Salesforce (SP). Salesforce receives your company's certificate and metadata. When employees log in to Salesforce, it redirects them to your company's IdP, which sends back a signed SAML token. Salesforce validates the signature using your public certificate - if valid, it trusts the authentication and grants access.
+                        </p>
+                    </div>
+                </div>
+
+                <h2>🎫 SAML Tokens (Security Assertion Markup Language)</h2>
+                <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 40px;">
+                    <p style="font-size: 1.3em; margin-bottom: 20px; color: #0a192f;">
+                        <strong>What is a SAML Token?</strong> An XML-based security token that contains assertions (statements) about a user's identity, authentication status, and attributes.
+                    </p>
+
+                    <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 25px;">SAML Token Structure - Three Types of Assertions:</h4>
+                    <div style="margin-top: 20px;">
+                        <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #00d9ff;">
+                            <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">1. Authentication Assertion</h5>
+                            <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Confirms the user was authenticated, when, and how (password, MFA, biometric)</p>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #00d9ff;">
+                            <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">2. Attribute Assertion</h5>
+                            <p style="font-size: 1.1em; margin: 0; color: #0a192f;">Contains user attributes (name, email, department, role, employee ID)</p>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #00d9ff;">
+                            <h5 style="color: #0a192f; font-size: 1.3em; margin: 0 0 10px 0;">3. Authorization Decision Assertion</h5>
+                            <p style="font-size: 1.1em; margin: 0; color: #0a192f;">States what the user is authorized to do (optional, less commonly used)</p>
+                        </div>
+                    </div>
+
+                    <h4 style="color: #0a192f; font-size: 1.3em; margin-top: 30px;">SAML Token Security Features:</h4>
+                    <ul style="font-size: 1.2em; line-height: 1.9; color: #0a192f;">
+                        <li><strong style="color: #00d9ff;">Digital Signature:</strong> Prevents tampering - recipient can verify token wasn't modified</li>
+                        <li><strong style="color: #00d9ff;">Encryption:</strong> Sensitive attributes can be encrypted for confidentiality</li>
+                        <li><strong style="color: #00d9ff;">Timestamp & Expiration:</strong> Tokens include validity period to prevent replay attacks</li>
+                        <li><strong style="color: #00d9ff;">Unique ID:</strong> Each token has a unique identifier to prevent reuse</li>
+                        <li><strong style="color: #00d9ff;">Audience Restriction:</strong> Token specifies which service provider it's intended for</li>
+                    </ul>
+
+                    <div style="background: #0a192f; color: white; padding: 20px; border-radius: 8px; font-family: monospace; font-size: 0.85em; overflow-x: auto; margin-top: 25px;">
+                        <div style="margin-bottom: 10px; font-family: sans-serif;"><strong style="color: #00d9ff;">Simplified SAML Token Example:</strong></div>
+                        <div style="color: #00ff00;">&lt;saml:Assertion ID="abc123" IssueInstant="2025-01-16T10:00:00Z"&gt;</div>
+                        <div style="padding-left: 20px; color: #ff6b6b;">  &lt;saml:Issuer&gt;https://company-idp.com&lt;/saml:Issuer&gt;</div>
+                        <div style="padding-left: 20px; color: #00d9ff;">  &lt;saml:Subject&gt;</div>
+                        <div style="padding-left: 40px; color: white;">    &lt;saml:NameID&gt;john.doe@company.com&lt;/saml:NameID&gt;</div>
+                        <div style="padding-left: 20px; color: #00d9ff;">  &lt;/saml:Subject&gt;</div>
+                        <div style="padding-left: 20px; color: #ffff00;">  &lt;saml:AttributeStatement&gt;</div>
+                        <div style="padding-left: 40px; color: white;">    &lt;saml:Attribute Name="email"&gt;john.doe@company.com&lt;/saml:Attribute&gt;</div>
+                        <div style="padding-left: 40px; color: white;">    &lt;saml:Attribute Name="department"&gt;Engineering&lt;/saml:Attribute&gt;</div>
+                        <div style="padding-left: 20px; color: #ffff00;">  &lt;/saml:AttributeStatement&gt;</div>
+                        <div style="padding-left: 20px; color: #ff6b6b;">  &lt;Signature&gt;...digital signature...&lt;/Signature&gt;</div>
+                        <div style="color: #00ff00;">&lt;/saml:Assertion&gt;</div>
+                    </div>
+                </div>
+
+                <h2>🔐 Single Sign-On (SSO)</h2>
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
+                    <h3 style="color: #00d9ff; font-size: 2em; margin-bottom: 20px;">What is SSO?</h3>
+                    <p style="font-size: 1.4em; margin-bottom: 0;">
+                        A user authentication process that allows users to access <strong style="color: #00d9ff;">multiple applications</strong> with <strong style="color: #00d9ff;">one set of login credentials</strong> and <strong style="color: #00d9ff;">one authentication session</strong>
+                    </p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 40px;">
+                    <h4 style="color: #0a192f; font-size: 1.4em; margin-top: 0;">How SSO Works:</h4>
+                    <ol style="font-size: 1.2em; line-height: 2.2; color: #0a192f;">
+                        <li>User attempts to access Application A (e.g., Email)</li>
+                        <li>Application A redirects to central SSO system</li>
+                        <li>User logs in once to the SSO system (enters credentials)</li>
+                        <li>SSO system creates a session and issues a token</li>
+                        <li>User is redirected back to Application A with the token</li>
+                        <li>User is now logged into Application A</li>
+                        <li><strong style="color: #00d9ff;">Later:</strong> User tries to access Application B (e.g., Salesforce)</li>
+                        <li>Application B redirects to SSO system</li>
+                        <li><strong style="color: #00d9ff;">SSO detects existing session - no login required!</strong></li>
+                        <li>SSO issues a new token for Application B</li>
+                        <li>User automatically logged into Application B without re-entering credentials</li>
+                    </ol>
+                </div>
+
+                <h2>🔄 Identity Federation vs Single Sign-On</h2>
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 40px; border: 2px solid #00d9ff;">
+                    <table style="width: 100%; font-size: 1.1em; border-collapse: collapse;">
+                        <tr style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white;">
+                            <th style="padding: 15px; text-align: left; border-radius: 5px 0 0 0;">Aspect</th>
+                            <th style="padding: 15px; text-align: left;">Single Sign-On (SSO)</th>
+                            <th style="padding: 15px; text-align: left; border-radius: 0 5px 0 0;">Identity Federation</th>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Scope</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">User experience feature - one login for many apps</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Architecture/technology - how systems trust each other</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Focus</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">User convenience and experience</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Technical implementation and trust relationships</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Domain</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Usually within one organization/domain</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Across multiple organizations/security domains</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Goal</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Reduce login fatigue, improve productivity</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Enable identity sharing, eliminate duplicate accounts</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;"><strong>Example</strong></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Log in once to access Gmail, Drive, Calendar, YouTube</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #ddd;">Use your company login to access partner organization systems</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><strong>Relationship</strong></td>
+                            <td colspan="2" style="padding: 15px; background: #fff3cd; text-align: center;"><strong>SSO is often implemented using Identity Federation protocols!</strong></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 30px; border-radius: 12px;">
+                    <h4 style="color: #00d9ff; font-size: 1.5em; margin-top: 0;">🎯 The Relationship Explained:</h4>
+                    <p style="font-size: 1.2em; line-height: 1.9; margin-bottom: 0;">
+                        <strong>Think of it this way:</strong><br><br>
+                        <strong style="color: #00d9ff;">Identity Federation</strong> is the underlying technology/protocol (SAML, OAuth, OIDC) that establishes trust and enables identity sharing between systems.<br><br>
+                        <strong style="color: #00d9ff;">SSO</strong> is the user-facing result - the ability to log in once and access everything.<br><br>
+                        <strong>Analogy:</strong> Federation is like the railway infrastructure (tracks, signals, agreements between railway companies). SSO is like having a single train ticket that works on all trains in the network!<br><br>
+                        <strong style="color: #ffff00;">You can have SSO without federation</strong> (all apps use same database), but <strong style="color: #ffff00;">modern SSO implementations typically use federation protocols</strong> to achieve seamless authentication across different systems and organizations.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14 -->
+        <div class="slide">
+            <h1>Protocol Comparison: SAML vs OIDC vs OAuth</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+                <p style="font-size: 1.3em; text-align: center; margin-bottom: 40px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 30px; border-radius: 12px;">
+                    Three major protocols power modern authentication and authorization. Each has different purposes, strengths, and use cases.
+                </p>
+
+                <h2>📋 Quick Overview</h2>
+                <div class="feature-grid" style="margin-bottom: 40px;">
+                    <div class="feature-card">
+                        <h4 style="color: #ff6b6b;">🎫 SAML</h4>
+                        <p><strong>Purpose:</strong> Authentication & SSO</p>
+                        <p><strong>Format:</strong> XML</p>
+                        <p><strong>Best For:</strong> Enterprise SSO</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4 style="color: #00d9ff;">🔐 OpenID Connect</h4>
+                        <p><strong>Purpose:</strong> Authentication (Identity)</p>
+                        <p><strong>Format:</strong> JSON (JWT)</p>
+                        <p><strong>Best For:</strong> Modern apps, mobile</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4 style="color: #00ff00;">🔑 OAuth 2.0</h4>
+                        <p><strong>Purpose:</strong> Authorization (Permissions)</p>
+                        <p><strong>Format:</strong> JSON</p>
+                        <p><strong>Best For:</strong> API access, delegated access</p>
+                    </div>
+                </div>
+
+                <h2>Detailed Comparison Table</h2>
+                <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 40px; border: 2px solid #00d9ff; overflow-x: auto;">
+                    <table style="width: 100%; font-size: 1em; border-collapse: collapse;">
+                        <tr style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white;">
+                            <th style="padding: 15px; text-align: left; border-radius: 5px 0 0 0;">Feature</th>
+                            <th style="padding: 15px; text-align: left;">SAML 2.0</th>
+                            <th style="padding: 15px; text-align: left;">OpenID Connect (OIDC)</th>
+                            <th style="padding: 15px; text-align: left; border-radius: 0 5px 0 0;">OAuth 2.0</th>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Primary Purpose</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Authentication & SSO</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Authentication (verifying identity)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Authorization (granting permissions)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Created</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">2005</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">2014</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">2012</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Data Format</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">XML (verbose)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">JSON (JWT tokens)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">JSON</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Token Type</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">SAML Assertion</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">ID Token (JWT)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Access Token (opaque or JWT)</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Mobile Support</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">❌ Poor (designed for web browsers)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Excellent (built for mobile)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Excellent (built for mobile)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>API Support</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">❌ Not designed for APIs</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Good (uses OAuth tokens for API calls)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Excellent (designed for API authorization)</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Complexity</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">⚠️ Complex (steep learning curve)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Simpler (built on OAuth)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">⚠️ Moderate (multiple flows)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>User Info</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Rich attributes in assertion</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ ID Token + UserInfo endpoint</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">❌ No user info (authorization only)</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Enterprise Adoption</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Very high (established standard)</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">📈 Growing rapidly</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">✅ Universal (APIs, social login)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Best Use Case</strong></td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Enterprise web SSO, B2B federation</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Modern apps needing authentication</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Third-party API access, delegated authorization</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 12px;"><strong>Common Example</strong></td>
+                            <td style="padding: 12px;">Corporate employees accessing Salesforce via company credentials</td>
+                            <td style="padding: 12px;">"Sign in with Google" on modern apps</td>
+                            <td style="padding: 12px;">"Allow Spotify to access your Facebook photos"</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>🎯 Key Differences Explained</h2>
+                <div style="margin-bottom: 40px;">
+                    <div style="background: #fff3cd; padding: 30px; border-radius: 12px; border-left: 8px solid #ff6b6b; margin-bottom: 25px;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">⚠️ Critical Distinction: Authentication vs Authorization</h3>
+                        <div style="background: white; padding: 25px; border-radius: 10px; margin-top: 20px;">
+                            <p style="font-size: 1.2em; color: #0a192f; line-height: 1.9; margin-bottom: 15px;">
+                                <strong style="color: #ff6b6b;">SAML & OIDC:</strong> Answer <strong>"Who are you?"</strong> - They authenticate users and prove identity
+                            </p>
+                            <p style="font-size: 1.2em; color: #0a192f; line-height: 1.9; margin-bottom: 0;">
+                                <strong style="color: #00d9ff;">OAuth 2.0:</strong> Answers <strong>"What can you access?"</strong> - It authorizes access without proving identity
+                            </p>
+                        </div>
+                        <p style="font-size: 1.2em; margin-top: 20px; color: #0a192f; margin-bottom: 0;">
+                            <strong>Important:</strong> OAuth 2.0 is NOT an authentication protocol! Using OAuth tokens for authentication is a common mistake. That's why OpenID Connect was created - it adds an identity layer on top of OAuth.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 8px solid #00d9ff; margin-bottom: 25px;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">🔄 OpenID Connect = OAuth 2.0 + Identity</h3>
+                        <p style="font-size: 1.2em; color: #0a192f; line-height: 1.9; margin-bottom: 0;">
+                            OIDC is built as a thin identity layer on top of OAuth 2.0. It uses OAuth's authorization flow but adds an <strong style="color: #00d9ff;">ID Token</strong> (JWT) that contains user identity information. This means OIDC can do both authentication (via ID Token) and authorization (via OAuth Access Token).
+                        </p>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 8px solid #00d9ff;">
+                        <h3 style="color: #0a192f; margin-top: 0; font-size: 1.8em;">📱 Modern vs Legacy</h3>
+                        <ul style="font-size: 1.2em; line-height: 1.9; color: #0a192f; margin-bottom: 0;">
+                            <li><strong style="color: #ff6b6b;">SAML:</strong> Legacy protocol optimized for web browsers and XML. Still dominant in enterprise but being replaced by OIDC in new implementations</li>
+                            <li><strong style="color: #00d9ff;">OIDC:</strong> Modern, designed for today's web, mobile apps, and APIs. JSON-based, simpler, better developer experience</li>
+                            <li><strong style="color: #00ff00;">OAuth 2.0:</strong> Foundation for modern authorization. OIDC builds on it for authentication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2>Real-World Scenarios</h2>
+                <div style="background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 40px;">
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: #ff6b6b; font-size: 1.4em; margin-bottom: 10px;">🎫 Use SAML When:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li>Implementing enterprise SSO for web applications</li>
+                            <li>Integrating with legacy enterprise systems that require SAML</li>
+                            <li>B2B federation where partner organizations use SAML</li>
+                            <li>Compliance requires XML signatures and enterprise-grade security</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: #00d9ff; font-size: 1.4em; margin-bottom: 10px;">🔐 Use OpenID Connect When:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9;">
+                            <li>Building new applications (web, mobile, SPA)</li>
+                            <li>Need user authentication AND authorization</li>
+                            <li>Want simpler implementation than SAML</li>
+                            <li>Building consumer-facing applications (social login)</li>
+                            <li>Need to access APIs after authentication</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: #00ff00; font-size: 1.4em; margin-bottom: 10px;">🔑 Use OAuth 2.0 When:</h4>
+                        <ul style="font-size: 1.2em; line-height: 1.9; margin-bottom: 0;">
+                            <li>Need delegated API access (app accessing API on user's behalf)</li>
+                            <li>Building third-party integrations ("Allow app X to access your data")</li>
+                            <li>Machine-to-machine authentication (client credentials flow)</li>
+                            <li>Authorization is needed but NOT authentication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2>Common Combinations</h2>
+                <div class="feature-grid">
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border: 2px solid #00d9ff;">
+                        <h4 style="color: #0a192f; font-size: 1.3em;">🔐 OIDC + OAuth</h4>
+                        <p style="color: #0a192f; font-size: 1.1em; margin-bottom: 0;">Most common modern setup. OIDC for authentication (ID Token) + OAuth for API authorization (Access Token)</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border: 2px solid #00d9ff;">
+                        <h4 style="color: #0a192f; font-size: 1.3em;">🎫 SAML for SSO + OAuth for APIs</h4>
+                        <p style="color: #0a192f; font-size: 1.1em; margin-bottom: 0;">Enterprise approach. SAML for employee web SSO, OAuth for mobile apps and API access</p>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border: 2px solid #00d9ff;">
+                        <h4 style="color: #0a192f; font-size: 1.3em;">🌐 Multi-Protocol Support</h4>
+                        <p style="color: #0a192f; font-size: 1.1em; margin-bottom: 0;">Modern IdPs (Okta, Auth0, Azure AD) support all three, allowing you to choose based on client needs</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.4em; text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #0a192f 0%, #112240 100%); color: white; border-radius: 12px;">
+                    <strong style="color: #00d9ff;">Bottom Line:</strong> If you're building something new, start with OIDC (authentication) + OAuth (authorization). Use SAML only when required for enterprise integration or legacy system compatibility. Remember: OAuth is NOT for authentication - use OIDC or SAML for that!
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">7</span>
+        <span id="current-slide">1</span> / <span id="total-slides">14</span>
     </div>
 
     <div class="navigation">
