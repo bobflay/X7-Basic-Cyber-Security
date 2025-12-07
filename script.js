@@ -1188,3 +1188,93 @@ function switchQuizTab(tabName) {
         selectedTab.style.display = 'block';
     }
 }
+
+// ============================================
+// Interactive Hash Demo Functions
+// ============================================
+
+/**
+ * Updates all hash outputs when the user types in the input field
+ */
+async function updateHashes() {
+    const input = document.getElementById('hash-input');
+    const sha256Output = document.getElementById('sha256-output');
+    const sha1Output = document.getElementById('sha1-output');
+    const sha512Output = document.getElementById('sha512-output');
+
+    // Check if elements exist
+    if (!input || !sha256Output || !sha1Output || !sha512Output) {
+        return;
+    }
+
+    const text = input.value;
+
+    // If input is empty, show placeholder text
+    if (!text) {
+        sha256Output.textContent = 'Type something to see the hash...';
+        sha1Output.textContent = 'Type something to see the hash...';
+        sha512Output.textContent = 'Type something to see the hash...';
+        return;
+    }
+
+    try {
+        // Compute SHA-256
+        const sha256Hash = await computeSHA256(text);
+        sha256Output.textContent = sha256Hash;
+
+        // Compute SHA-1
+        const sha1Hash = await computeSHA1(text);
+        sha1Output.textContent = sha1Hash;
+
+        // Compute SHA-512
+        const sha512Hash = await computeSHA512(text);
+        sha512Output.textContent = sha512Hash;
+    } catch (error) {
+        console.error('Error computing hashes:', error);
+        sha256Output.textContent = 'Error computing hash';
+        sha1Output.textContent = 'Error computing hash';
+        sha512Output.textContent = 'Error computing hash';
+    }
+}
+
+/**
+ * Computes SHA-256 hash of the input text
+ */
+async function computeSHA256(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    return bufferToHex(hashBuffer);
+}
+
+/**
+ * Computes SHA-1 hash of the input text
+ */
+async function computeSHA1(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest('SHA-1', data);
+    return bufferToHex(hashBuffer);
+}
+
+/**
+ * Computes SHA-512 hash of the input text
+ */
+async function computeSHA512(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest('SHA-512', data);
+    return bufferToHex(hashBuffer);
+}
+
+/**
+ * Converts ArrayBuffer to hexadecimal string
+ */
+function bufferToHex(buffer) {
+    const byteArray = new Uint8Array(buffer);
+    const hexCodes = [...byteArray].map(value => {
+        const hexCode = value.toString(16);
+        return hexCode.padStart(2, '0');
+    });
+    return hexCodes.join('');
+}
